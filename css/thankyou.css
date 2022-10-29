@@ -1,0 +1,79 @@
+@import url('styles.css');
+
+body {
+    background-color: var(--main-black);
+    background: var(--blue-black-gradient-bg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    animation: bg-animation 10s ease-in-out infinite alternate;
+}
+
+.wrapper {
+    margin-top: 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#TK {
+    font-size: clamp(4rem, 13vw + 0.1rem, 17rem);
+    color: var(--main-orange);
+    text-shadow: -5px 5px 5px var(--main-black);
+}
+
+.thank-you-msg {
+    font-size: clamp(1.8rem, 3vw + 0.1rem, 2.5rem);
+    letter-spacing: 1px;
+    line-height: 150%;   
+}
+
+.heart-icon {
+    background-image: url(../images/general_icons/heart-tab-icon.svg);
+    background-repeat: no-repeat;
+    color: #e5e5e5a6;
+    background-size: 100%;
+    background-position: center;
+    width: 10%;
+    aspect-ratio: 1;
+}
+
+.go-back-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--main-orange);
+    background-color: var(--main-blue);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#external-links-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px 70px;
+    padding: 50px;
+    border-top: 5px solid var(--main-blue);
+    margin: 0;
+}
+
+#external-links-section li {
+    margin: 0;
+}
+
+@media (max-width: 36em) {
+    .wrapper {
+        padding: 10px;
+    }
+    
+    #external-links-section {
+        padding: 50px 0 0 20px;
+    }
+
+    .heart-icon {
+        width:20%;
+    }
+}
