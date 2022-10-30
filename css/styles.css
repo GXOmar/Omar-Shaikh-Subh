@@ -609,11 +609,16 @@ textarea {
         mix-blend-mode: normal;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        transition: transform 350ms ease-out;
+        transition: transform 250ms ease-out;
     }
-    
+
     #primary-navigation[data-visible="true"] {
         transform: translateX(0%);
+    }
+
+    #primary-header[data-navbar-blur="false"] {
+        /* A fix for backdrop-filter of blur on some browsers not working in #primary-navigation element */
+        backdrop-filter: none;
     }
 
     #primary-navigation > li {
