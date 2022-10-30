@@ -70,8 +70,7 @@ body {
     -webkit-user-select: none;
 }
 
-.resize-animation-stopper * {
-    animation: none !important;
+.resize-transition-stopper * {
     transition: none !important;
 }
 
