@@ -16,6 +16,7 @@
 
     /* website section background style */
     --blue-black-gradient-bg: linear-gradient(135deg, var(--main-blue) 20%, var(--main-black));
+    --dawn-dusk-gradient-bg: linear-gradient(135deg, var(--main-orange) 0%, var(--main-blue) 20%, var(--main-black) 100%);
 }
 
 *, *::before, *::after {
@@ -529,9 +530,9 @@ textarea {
 }
 
 .blue-black-gradient-bg-animation {
-    background: var(--blue-black-gradient-bg);
+    background: var(--dawn-dusk-gradient-bg);
     background-size: 150%;
-    animation: bg-animation 10s ease-in-out infinite alternate;
+    animation: bg-animation 12s ease-in-out infinite alternate;
 }
 
 @keyframes bg-animation {
