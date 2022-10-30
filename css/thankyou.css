@@ -2,7 +2,7 @@
 
 body {
     background-color: var(--main-black);
-    background: var(--blue-black-gradient-bg);
+    background: var(--dawn-dusk-gradient-bg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 150%;
